@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather App</h1>
+
+    <!-- 6 Şehrin Anlık Durumu -->
+    <div id="default-cities" class="default-cities">
+      <!-- JS ile şehir kartları buraya eklenecek -->
+    </div>
+
+    <hr/>
+
+    <!-- Seçilebilir Şehir -->
+    <div class="select-city">
+      <label for="city-select">Choose a city:</label>
+      <select id="city-select">
+        <option value="">-- Select --</option>
+        <option value="Istanbul,TR">İstanbul</option>
+        <option value="Ankara,TR">Ankara</option>
+        <option value="Izmir,TR">İzmir</option>
+        <option value="Antalya,TR">Antalya</option>
+        <option value="Bursa,TR">Bursa</option>
+        <option value="Trabzon,TR">Trabzon</option>
+      </select>
+    </div>
+
+    <!-- Seçilen Şehrin Sonucu -->
+    <div id="weather-result" class="weather-result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
